@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { sql, poolPromise } = require('../db');
+const { sql, poolPromise } = require('./db');
 
 // GET all employees
 router.get('/', async (req, res) => {
@@ -50,7 +50,7 @@ router.get('/:id', async (req, res) => {
 });
 
 
-// POST new employee — returns inserted ID
+// POST new employee â€” returns inserted ID
 router.post('/', async (req, res) => {
     try {
         const { Name, DOB, Address, Contact_Number } = req.body;
