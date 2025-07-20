@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const employeeRoutes = require('./routes/employeeRoutes');
+const employeeRoutes = require('./employeeRoutes');
 const auth = require('./authMiddleware');
 require('dotenv').config();
 
