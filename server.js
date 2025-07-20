@@ -4,6 +4,9 @@ const employeeRoutes = require('./employeeRoutes');
 const auth = require('./authMiddleware');
 require('dotenv').config();
 
+const cors = require('cors');
+app.use(cors());
+
 const app = express();
 app.use(bodyParser.json());
 
